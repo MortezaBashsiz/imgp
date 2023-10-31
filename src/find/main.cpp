@@ -23,8 +23,8 @@ int main(int argc, char** argv)
 	cv::CommandLineParser parser(argc, argv,
 			"{help h||}"
 			"{cascade|data/haarcascades/haarcascade_frontalface_alt.xml|}"
-			"{width|800|}"
-			"{height|600|}"
+			"{width|640|}"
+			"{height|480|}"
 			"{camera|0|}"
 	);
 	if (parser.has("help"))
