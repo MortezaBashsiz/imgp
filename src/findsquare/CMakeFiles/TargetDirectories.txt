@@ -1,0 +1,3 @@
+/home/morteza/data/git/MortezaBashsiz/imgp/src/findsquare/CMakeFiles/Squares.dir
+/home/morteza/data/git/MortezaBashsiz/imgp/src/findsquare/CMakeFiles/edit_cache.dir
+/home/morteza/data/git/MortezaBashsiz/imgp/src/findsquare/CMakeFiles/rebuild_cache.dir
