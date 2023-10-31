@@ -1,3 +1,0 @@
-/home/morteza/data/git/MortezaBashsiz/imgp/src/showpic/CMakeFiles/DisplayImage.dir
-/home/morteza/data/git/MortezaBashsiz/imgp/src/showpic/CMakeFiles/edit_cache.dir
-/home/morteza/data/git/MortezaBashsiz/imgp/src/showpic/CMakeFiles/rebuild_cache.dir
