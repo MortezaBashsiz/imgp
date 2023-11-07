@@ -34,5 +34,6 @@ void findCascade(Mat& img, CascadeClassifier& cascade, vector<Rect>& cascades)
 		rectangle( img, Point(cvRound(r.x*scale), cvRound(r.y*scale)),
 						 		Point(cvRound((r.x + r.width-1)*scale), cvRound((r.y + r.height-1)*scale)),
 						 		color, 3, 8, 0);
+		putText( img, "Item", Point(cvRound(r.x*scale), cvRound(r.y*scale)-10), FONT_HERSHEY_SIMPLEX, 0.9, Scalar(0, 0, 255), 2 );
 	}
 }
