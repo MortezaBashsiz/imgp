@@ -1,7 +1,7 @@
 #include <iostream>
 
 #include "square.hpp"
-#include "face.hpp"
+#include "findCascade.hpp"
 
 using namespace cv;
 using namespace std;
@@ -11,7 +11,6 @@ static void help(char** argv)
 		cout << "Usage:\n"
 				<<  argv[0]
 				<<  "   [--cascade=<cascade_path>]\n"
-						"   [--nested-cascade=<cascade_path>]\n"
 						"		[--width]\n"
 						"		[--height]\n"
 						"   [--camera]\n\n"
@@ -63,9 +62,9 @@ int main(int argc, char** argv)
 			break;
 		}
 		vector<vector<Point> > squares;
-		vector<Rect> faces;
-		findSquares(Frame, squares);
-		findFace(Frame, cascade, faces);
+		vector<Rect> cascades;
+		//findSquares(Frame, squares);
+		findCascade(Frame, cascade, cascades);
 		polylines(Frame, squares, true, Scalar(0, 255, 0), 3, LINE_AA);
 		imshow("Video Player", Frame);
 		char c = (char)waitKey(25);
