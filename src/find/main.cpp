@@ -58,6 +58,7 @@ int main(int argc, char** argv)
 	}
 	while (true){
 		cap >> Frame;
+		normalize(Frame, Frame, 0, 255, NORM_MINMAX);
 		if (Frame.empty()){
 			break;
 		}
