@@ -11,8 +11,6 @@
 using namespace cv;
 using namespace std;
 
-
-
 int main(int argc, char** argv)
 {
 	CommandLineParser parser(argc, argv,
