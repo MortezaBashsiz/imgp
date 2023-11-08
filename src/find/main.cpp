@@ -46,8 +46,12 @@ int main(int argc, char** argv)
 			help(argv);
 			return -1;
 	}
-	Mat Frame;
-	namedWindow("Video Player");
+	Mat Frame, Gray, Yuv, Xyz, Ycrcb;
+	namedWindow("BGR");
+	// namedWindow("GRAY");
+	// namedWindow("YUV");
+	// namedWindow("XYZ");
+	// namedWindow("YCRCB");
 	VideoCapture cap(camera);
 	cap.set(CAP_PROP_FRAME_WIDTH,	width);
 	cap.set(CAP_PROP_FRAME_HEIGHT,	height);
@@ -59,15 +63,23 @@ int main(int argc, char** argv)
 	while (true){
 		cap >> Frame;
 		normalize(Frame, Frame, 0, 255, NORM_MINMAX);
+    // cvtColor(Frame, Gray, COLOR_BGR2GRAY);
+    // cvtColor(Frame, Yuv, COLOR_BGR2YUV);
+    // cvtColor(Frame, Xyz, COLOR_BGR2XYZ);
+    // cvtColor(Frame, Ycrcb, COLOR_BGR2YCrCb);
 		if (Frame.empty()){
 			break;
 		}
 		vector<vector<Point> > squares;
 		vector<Rect> cascades;
-		//findSquares(Frame, squares);
+		// findSquares(Frame, squares);
 		findCascade(Frame, cascade, cascades);
 		polylines(Frame, squares, true, Scalar(0, 255, 0), 3, LINE_AA);
-		imshow("Video Player", Frame);
+		imshow("BGR", Frame);
+		// imshow("GRAY", Gray);
+		// imshow("YUV", Yuv);
+		// imshow("XYZ", Xyz);
+		// imshow("YCRCB", Ycrcb);
 		char c = (char)waitKey(25);
 		if (c == 27){
 			break;
