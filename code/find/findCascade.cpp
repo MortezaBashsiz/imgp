@@ -22,7 +22,7 @@ void findCascade(Mat& img, CascadeClassifier& cascade, vector<Rect>& cascades)
 	cascade.detectMultiScale( smallImg, cascades,
 			1.1, 2, 0
 			|CASCADE_FIND_BIGGEST_OBJECT
-			// |CASCADE_DO_ROUGH_SEARCH
+			|CASCADE_DO_ROUGH_SEARCH
 			|CASCADE_SCALE_IMAGE,
 			Size(30, 30) );
 	for ( size_t i = 0; i < cascades.size(); i++ )

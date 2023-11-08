@@ -16,7 +16,7 @@ static void help(char** argv)
 						"   [--camera]\n\n"
 						"example:\n"
 				<<  argv[0]
-				<<  " --cascade=./haarcascade_frontalface_alt.xml --width=800 --height=600 --camera=0 \n";
+				<<  " --cascade=./haarcascade_frontalface_alt.xml --width=640 --height=480 --camera=0 \n";
 }
 
 string cascadeName;
