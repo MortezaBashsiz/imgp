@@ -1,12 +1,7 @@
-#ifndef NOSE_HPP
-#define NOSE_HPP
+#pragma once
 
-class nose
-{
+class nose {
 public:
-	nose();
-	~nose();
-	
+    nose();
+    ~nose();
 };
-
-#endif // define NOSE_HPP

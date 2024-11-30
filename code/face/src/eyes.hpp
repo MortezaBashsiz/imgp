@@ -1,12 +1,7 @@
-#ifndef EYES_HPP
-#define EYES_HPP
+#pragma once
 
-class eyes
-{
+class eyes {
 public:
-	eyes();
-	~eyes();
-	
+    eyes();
+    ~eyes();
 };
-
-#endif // define EYES_HPP

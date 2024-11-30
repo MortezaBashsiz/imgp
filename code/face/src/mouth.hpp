@@ -1,13 +1,7 @@
-#ifndef MOUTH_HPP
-#define MOUTH_HPP
+#pragma once
 
-class mouth
-{
+class mouth {
 public:
-	mouth();
-	~mouth();
-	
+    mouth();
+    ~mouth();
 };
-
-
-#endif // define MOUTH_HPP
